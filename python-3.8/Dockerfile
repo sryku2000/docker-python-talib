@@ -2,6 +2,8 @@ FROM python:3.8
 
 MAINTAINER Olivier TASSEL <https://github.com/otassel>
 
+WORKDIR /usr/src
+
 RUN pip install numpy 
 
 # TA-Lib
