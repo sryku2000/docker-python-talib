@@ -6,6 +6,10 @@ WORKDIR /usr/src
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 
+RUN yum groupinstall "Development Tools"
+RUN yum install gcc
+RUN yum install gcc gcc-c++
+
 RUN apt-get update \
  && apt-get install wget unzip zip -y
 
