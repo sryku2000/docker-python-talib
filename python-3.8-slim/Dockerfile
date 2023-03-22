@@ -7,7 +7,7 @@ WORKDIR /usr/src
 RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 
 RUN apt-get update \
- && apt-get install wget unzip zip gcc build-essential git -y 
+ && apt-get install wget unzip zip gcc build-essential -y 
 
 RUN pip install --upgrade pip
 RUN pip install cython
@@ -21,6 +21,5 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   ./configure --prefix=/usr && \
   make && \
   make install
-RUN git clone https://github.com/mrjbq7/ta-lib.git /ta-lib-py && cd ta-lib-py && python setup.py install
 
 RUN pip install ta-lib
