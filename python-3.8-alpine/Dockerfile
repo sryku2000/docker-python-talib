@@ -6,7 +6,7 @@ WORKDIR /usr/src
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 
-RUN apt install wget
+RUN apt-get install wget
 
 RUN pip install --upgrade pip
 RUN pip install cython
