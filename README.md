@@ -14,7 +14,7 @@ The execution method is as follows:
 ```
 docker run -v {host directory}:{container directory} -t -i --rm sryku2000/python-3.8-talib-shioaji {bash command}
 ```
-## example
+## Example
 ```
 docker run -v /home/user/example_python:/usr/src -t -i --rm sryku2000/python-3.8-talib-shioaji python main.py
 ```
