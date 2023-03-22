@@ -1,6 +1,6 @@
 FROM python:3.8
 
-MAINTAINER Olivier TASSEL <https://github.com/otassel>
+MAINTAINER Sryku2000 <https://github.com/sryku2000>
 
 WORKDIR /usr/src
 
