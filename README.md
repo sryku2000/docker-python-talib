@@ -1,6 +1,3 @@
-# Work directory
-This image workdir is /usr/src
-
 # Main Libraries
 The main libraries include **Talib** and **Shioaji API**.
 
@@ -9,6 +6,10 @@ Other libraries used for calculation are:
 ```
 numpy mplfinance pandas shioaji load_dotenv bokeh==2.4.3 backtesting
 ```
+
+# Work directory
+This image workdir is /usr/src
+
 # Execution Method
 The execution method is as follows:
 ```
