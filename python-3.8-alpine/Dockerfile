@@ -6,9 +6,6 @@ WORKDIR /usr/src
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 
-RUN apk update
-RUN apk add musl-dev wget git build-base make automake gcc g++ subversion python3-dev
-
 RUN pip install --upgrade pip
 RUN pip install cython
 RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
@@ -24,5 +21,3 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
 RUN git clone https://github.com/mrjbq7/ta-lib.git /ta-lib-py && cd ta-lib-py && python setup.py install
 
 RUN pip install ta-lib
-
-RUN apk del musl-dev wget git build-base make automake gcc g++ subversion python3-dev
