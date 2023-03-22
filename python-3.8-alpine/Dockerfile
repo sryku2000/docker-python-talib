@@ -7,7 +7,7 @@ WORKDIR /usr/src
 RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 
 RUN apt-get update \
- && apt-get install wget unzip zip gcc gcc-c++ -y 
+ && apt-get install wget unzip zip gcc build-essential -y 
 
 RUN pip install --upgrade pip
 RUN pip install cython
